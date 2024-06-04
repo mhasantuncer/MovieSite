@@ -21,176 +21,193 @@
     <title>Movie WebSite</title>
   </head>
   <body>
-    <header class="main-class">
+    <!-- Header -->
+    <header class="main-header">
       <div class="container">
         <div class="logo"><a href="/">Movie WebSite</a></div>
+
+        <!-- Nav -->
         <nav>
           <ul>
             <li>
               <a href="/" class="nav-link">Movies</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="/" class="nav-link">About</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="search">
-      <div class="container">
-        <div id="alert"></div>
-        <form action="#" class="search-form">
-          <div class="search-radio">
-            <input type="radio" name="type" id="movie" value="movie" checked />
-            <label for="movie">Movies</label>
-            <input type="radio" name="type" id="tv" value="tv" />
-            <label for="shows">TV shows</label>
+    <!-- Main -->
+    <main>
+      <!-- Search section-->
+      <section class="search">
+        <div class="container">
+          <div id="alert"></div>
+          <form action="#" class="search-form">
+            <div class="search-radio">
+              <input
+                type="radio"
+                name="type"
+                id="movie"
+                value="movie"
+                checked
+              />
+              <label for="movie">Movies</label>
+            </div>
+            <div class="search-flex">
+              <input
+                type="text"
+                name="search-term"
+                id="search-term"
+                placeholder="Search Movie"
+              />
+              <!-- JavaScript myAlert() function  -->
+              <button type="submit" class="btn" onclick="myAlert()">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Movies section -->
+      <section class="container">
+        <h2>Popular Movies</h2>
+        <div id="popular-movies" class="flex-items">
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/black-panther-web.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Black Panther</h5>
+              <p class="card-text">
+                <small>2018 | 2h 14m</small>
+              </p>
+            </div>
           </div>
-          <div class="search-flex">
-            <input
-              type="text"
-              name="search-term"
-              id="search-term"
-              placeholder="Enter Search Term"
-            />
-            <button type="submit" class="btn">
-              <i class="fas fa-search"></i>
-            </button>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/blackkklansman2-web.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Blackkklansman</h5>
+              <p class="card-text">
+                <small>2018 | 2h 15m</small>
+              </p>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-    <section class="container">
-      <h2>Popular Movies</h2>
-      <div id="popular-movies" class="grid">
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/green-book-web.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Green Book</h5>
+              <p class="card-text">
+                <small>2018 | 2h 10m</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/the-favourite-web.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">The Favourite</h5>
+              <p class="card-text">
+                <small>2018 | 1h 59m</small>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
+
+        <div id="popular-movies-2" class="flex-items">
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/bohemian-rhapsody-web.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Bohemian Rhapsody</h5>
+              <p class="card-text">
+                <small>2018 | 2h 14m</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/ROMA_Vertical-Huddle_RGB.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Roma</h5>
+              <p class="card-text">
+                <small>2018 | 2h 15m</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/star.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">A Star Is Born</h5>
+              <p class="card-text">
+                <small>2018 | 2h 16m</small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#">
+              <img
+                src="images/ROMA_Vertical-Huddle_RGB.jpg"
+                class="card-img-top"
+                alt="Movie Title"
+              />
+            </a>
+            <div class="card-body">
+              <h5>Roma</h5>
+              <p>
+                <small>2018 | 2h 15m</small>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXXX</small>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <a href="movie-details.html?id=1">
-            <img
-              src="images/no-image.jpg"
-              class="card-img-top"
-              alt="Movie Title"
-            />
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Movie Title</h5>
-            <p class="card-text">
-              <small class="text-muted">Release: XX/XX/XXX</small>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
-        <div class="logo"><span>Movie Database</span></div>
+        <div class="logo"><span>Movie WebSite</span></div>
         <div class="social-links">
           <a href="https://www.facebook.com" target="_blank">
             <i class="fab fa-facebook-f"></i>
